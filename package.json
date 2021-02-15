@@ -1,5 +1,5 @@
 {
-  "name": "blog-starter",
+  "name": "2049-watcher",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -11,6 +11,7 @@
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "next-themes": "^0.0.10",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "remark": "11.0.2",
@@ -18,7 +19,7 @@
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.4.0"
+    "tailwindcss": "^2.0.3"
   },
   "license": "MIT"
 }

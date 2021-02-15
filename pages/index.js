@@ -2,6 +2,7 @@ import Container from '../components/container'
 import PostPreview from '../components/post-preview'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
+import PostList from '../components/post-list'
 import { getAllPosts } from '../lib/api'
 import { BLOG_NAME } from '../lib/constants'
 import Head from 'next/head'
@@ -15,7 +16,7 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro />
-          <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+          <PostList>
             {allPosts.map(post => 
               <PostPreview
                 key={post.slug}
@@ -27,7 +28,7 @@ export default function Index({ allPosts }) {
                 excerpt={post.excerpt}
               /> 
             )}
-          </div>
+          </PostList>
         </Container>
       </Layout>
     </>
