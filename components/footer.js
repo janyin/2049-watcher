@@ -5,7 +5,7 @@ import Container from './container'
 export default function Footer() {
   const [isMounted, setIsMounted] = useState(false)
   const [themeMode, setThemeMode] = useState('system')
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
 
   useEffect(() => {
     const themeSetting = localStorage.getItem('themeSetting')
