@@ -1,6 +1,6 @@
 export default function Avatar({ name, picture }) {
   return (
-    <div 
+    <div
       className="flex items-center"
       style={{ cursor: 'pointer' }}
       onClick={() => window.open('https://github.com/janyin')}

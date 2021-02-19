@@ -3,42 +3,42 @@ import { useTheme } from 'next-themes'
 import Container from './container'
 
 export default function Footer() {
-  const [isMounted, setIsMounted] = useState(false);
-  const [themeMode, setThemeMode] = useState('system');
-  const { theme, setTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false)
+  const [themeMode, setThemeMode] = useState('system')
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
-    const themeSetting = localStorage.getItem('themeSetting');
+    const themeSetting = localStorage.getItem('themeSetting')
 
-    if(!themeSetting){
-      localStorage.setItem('themeSetting', 'system');
-    }else{
-      setThemeMode(themeSetting);
+    if (!themeSetting) {
+      localStorage.setItem('themeSetting', 'system')
+    } else {
+      setThemeMode(themeSetting)
     }
-    setIsMounted(true);
+    setIsMounted(true)
   }, [])
 
   useEffect(() => {
-    if(isMounted){
-      window.matchMedia('(prefers-color-scheme: dark)').addListener( (e) => {
-        const newTheme = e.matches ? "dark" : "light";
-        const themeSetting = localStorage.getItem('themeSetting');
+    if (isMounted) {
+      window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+        const newTheme = e.matches ? 'dark' : 'light'
+        const themeSetting = localStorage.getItem('themeSetting')
 
-        localStorage.setItem('systemTheme', newTheme);
-        if(themeSetting && themeSetting === 'system'){
-          setTheme(newTheme);
+        localStorage.setItem('systemTheme', newTheme)
+        if (themeSetting && themeSetting === 'system') {
+          setTheme(newTheme)
         }
-      });
+      })
     }
   }, [isMounted])
 
   const handleChange = (e) => {
     localStorage.setItem('themeSetting', e.target.value)
-    setThemeMode(e.target.value);
-    if(e.target.value !== 'system'){
-      setTheme(e.target.value);
-    }else{
-      setTheme(localStorage.getItem('systemTheme') || 'light');
+    setThemeMode(e.target.value)
+    if (e.target.value !== 'system') {
+      setTheme(e.target.value)
+    } else {
+      setTheme(localStorage.getItem('systemTheme') || 'light')
     }
   }
 
@@ -57,14 +57,14 @@ export default function Footer() {
               View on GitHub
             </a>
           </div>
-          <select 
+          <select
             value={themeMode}
             onChange={handleChange}
-            className='p-1 border rounded border-black dark:text-black'
+            className="p-1 border rounded border-black dark:text-black"
           >
-            <option value='light'>Light</option>
-            <option value='dark'>Dark</option>
-            <option value='system'>System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="system">System</option>
           </select>
         </div>
       </Container>

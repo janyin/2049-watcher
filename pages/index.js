@@ -17,7 +17,7 @@ export default function Index({ allPosts }) {
         <Container>
           <Intro />
           <PostList>
-            {allPosts.map(post => 
+            {allPosts.map((post) => (
               <PostPreview
                 key={post.slug}
                 title={post.title}
@@ -26,8 +26,8 @@ export default function Index({ allPosts }) {
                 author={post.author}
                 slug={post.slug}
                 excerpt={post.excerpt}
-              /> 
-            )}
+              />
+            ))}
           </PostList>
         </Container>
       </Layout>
@@ -44,7 +44,7 @@ export async function getStaticProps() {
     'coverImage',
     'excerpt',
   ])
-  
+
   return {
     props: { allPosts },
   }
