@@ -1,13 +1,13 @@
 ---
 title: '生活 LIVE'
 excerpt: '生活的意义就是享受活着的每一刻'
-coverImage: '/assets/blog/life/cover.jpg'
+coverImage: '/assets/blog/life/cover.webp'
 date: '2021-02-19'
 author:
   name: Red Yin
   picture: '/assets/blog/authors/red.jpeg'
 ogImage:
-  url: '/assets/blog/life/cover.jpg'
+  url: '/assets/blog/life/cover.webp'
 ---
 
 昨天去世纪公园试用刚买的 DJI Pocket 2。下午阳光明媚，并且伴随着春风，心情非常舒畅。
