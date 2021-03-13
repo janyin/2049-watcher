@@ -1,13 +1,12 @@
 ---
 title: '神秘人this到底是谁'
 excerpt: 'JavaScript不同场景下的this理解'
-coverImage: '/assets/blog/default/cover.png'
 date: '2020-03-21'
 author:
   name: Red Yin
   picture: '/assets/blog/authors/red.jpeg'
 ogImage:
-  url: '/assets/blog/default/cover.png'
+  url: ''
 ---
 
 在JavaScript函数中this指的是什么？有以下五种情景规则去判断：

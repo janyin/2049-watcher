@@ -1,13 +1,12 @@
 ---
 title: 'SEO优化'
 excerpt: 'seo优化个人经验'
-coverImage: '/assets/blog/seo/seo.jpg'
 date: '2019-12-12'
 author:
   name: Red Yin
   picture: '/assets/blog/authors/red.jpeg'
 ogImage:
-  url: '/assets/blog/seo/seo.jpg'
+  url: ''
 ---
 
 ## 1、域名相关

@@ -1,13 +1,12 @@
 ---
 title: '作用域链scope chain，闭包closure'
 excerpt: 'JS引擎在执行代码时候，会专门有一个执行环境栈。最初push进去的为全局执行上下文，代码执行遇到局部作用域（{}语句、函数等）时就会生成其相应的执行上下文并push进去，执行完毕就会pop出栈。一直到最后，全局执行上下文被pop出栈时，那么当前执行环境栈为空，即此JS脚本运行完毕！'
-coverImage: '/assets/blog/default/cover.png'
 date: '2020-03-23'
 author:
   name: Red Yin
   picture: '/assets/blog/authors/red.jpeg'
 ogImage:
-  url: '/assets/blog/default/cover.png'
+  url: ''
 ---
 
 JS引擎在执行代码时候，会专门有一个执行环境栈。最初push进去的为全局执行上下文，代码执行遇到局部作用域（{}语句、函数等）时就会生成其相应的执行上下文并push进去，执行完毕就会pop出栈。一直到最后，全局执行上下文被pop出栈时，那么当前执行环境栈为空，即此JS脚本运行完毕！

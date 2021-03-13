@@ -1,7 +1,6 @@
 ---
 title: '生活 LIVE'
 excerpt: '生活的意义就是享受活着的每一刻'
-coverImage: '/assets/blog/life/cover.webp'
 date: '2021-02-19'
 author:
   name: Red Yin

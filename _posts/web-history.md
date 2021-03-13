@@ -1,7 +1,6 @@
 ---
 title: 'web浏览器历史'
 excerpt: '浏览器是我们使用互联网服务的主要软件，并在互联网的历史发展中占有重要的地位。1990年，出现了世界上第一个网页、第一个web浏览器、第一个web服务器，这些都来自于一位获得图灵奖的英国计算机科学家Tim Berners-Lee的创作。2012年伦敦奥运会开幕式上，他和他曾经发明万维网的NeXT Computer共同亮相在世界面前，向互联网致敬。'
-coverImage: '/assets/blog/web-history/cover.jpeg'
 date: '2020-04-04'
 author:
   name: Red Yin

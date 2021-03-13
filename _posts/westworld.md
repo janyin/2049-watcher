@@ -1,7 +1,6 @@
 ---
 title: '西部世界 Neuralink'
 excerpt: '思考本身的运作就是通过调动过去记忆和当下的感知进行对比而生成一个投射到未来的strategy'
-coverImage: '/assets/blog/westworld/westworld.jpg'
 date: '2020-06-13'
 author:
   name: Red Yin

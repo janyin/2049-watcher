@@ -1,13 +1,12 @@
 ---
 title: '我认为的写作'
 excerpt: '写作是一种整合信息资源的综合表达能力。你的意识 ——> 符合语言规则的文字 ——> 能被大众理解的文字'
-coverImage: '/assets/blog/write/cover.jpg'
 date: '2020-03-20'
 author:
   name: Red Yin
   picture: '/assets/blog/authors/red.jpeg'
 ogImage:
-  url: '/assets/blog/write/cover.jpg'
+  url: ''
 ---
 
 ## 写作是一种整合信息资源的综合表达能力

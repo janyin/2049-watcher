@@ -21,7 +21,6 @@ export default function Index({ allPosts }) {
               <PostPreview
                 key={post.slug}
                 title={post.title}
-                coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
                 slug={post.slug}
@@ -36,14 +35,7 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'excerpt'])
 
   return {
     props: { allPosts },
