@@ -1,6 +1,6 @@
 ---
 title: '为什么我喜欢科技?'
-excerpt: ''
+excerpt: '我喜欢的是这个世界。'
 date: '2021-04-05'
 author:
   name: Red Yin
