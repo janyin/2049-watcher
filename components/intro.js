@@ -5,7 +5,7 @@ export default function Intro() {
         2049
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Developer & Writer & Watcher
+        Developer & Writer
       </h4>
     </section>
   )

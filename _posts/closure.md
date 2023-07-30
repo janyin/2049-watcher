@@ -4,7 +4,7 @@ excerpt: 'JS引擎在执行代码时候，会专门有一个执行环境栈。�
 date: '2020-03-23'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: ''
 ---

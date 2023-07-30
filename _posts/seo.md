@@ -4,7 +4,7 @@ excerpt: 'seo优化个人经验'
 date: '2019-12-12'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: ''
 ---

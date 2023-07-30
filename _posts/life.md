@@ -4,7 +4,7 @@ excerpt: '生活的意义就是享受活着的每一刻'
 date: '2021-02-19'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: '/assets/blog/life/cover.webp'
 ---

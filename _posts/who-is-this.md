@@ -4,7 +4,7 @@ excerpt: 'JavaScript不同场景下的this理解'
 date: '2020-03-21'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: ''
 ---

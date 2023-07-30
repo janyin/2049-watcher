@@ -4,7 +4,7 @@ excerpt: '我喜欢的是这个世界。'
 date: '2021-04-05'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: ''
 ---

@@ -4,7 +4,7 @@ excerpt: '写作是一种整合信息资源的综合表达能力。你的意识 
 date: '2020-03-20'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: ''
 ---

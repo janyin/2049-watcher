@@ -4,7 +4,7 @@ excerpt: '思考本身的运作就是通过调动过去记忆和当下的感知�
 date: '2020-06-13'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: '/assets/blog/westworld/westworld.jpg'
 ---

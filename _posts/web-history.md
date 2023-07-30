@@ -4,7 +4,7 @@ excerpt: '浏览器是我们使用互联网服务的主要软件，并在互联�
 date: '2020-04-04'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: '/assets/blog/web-history/cover.jpeg'
 ---

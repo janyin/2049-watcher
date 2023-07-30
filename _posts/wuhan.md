@@ -4,7 +4,7 @@ excerpt: '这个夏天，我要寻找到我的方向。'
 date: '2021-05-12'
 author:
   name: Red Yin
-  picture: '/assets/red.jpeg'
+  picture: '/assets/love-death.jpg'
 ogImage:
   url: ''
 ---
