@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
     "next": "10.0.6",
@@ -17,6 +18,8 @@
     "remark-html": "10.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/react": "17.0.1",
     "autoprefixer": "^10.2.4",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
@@ -25,7 +28,8 @@
     "postcss": "^8.4.27",
     "prettier": "^2.2.1",
     "sharp": "^0.32.4",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "typescript": "^5.1.6"
   },
   "license": "MIT"
 }

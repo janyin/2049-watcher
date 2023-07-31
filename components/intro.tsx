@@ -8,5 +8,5 @@ export default function Intro() {
         Developer & Writer
       </h4>
     </section>
-  )
+  );
 }

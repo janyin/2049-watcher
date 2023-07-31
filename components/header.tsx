@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { BLOG_NAME } from '../lib/constants'
+import Link from 'next/link';
+import { BLOG_NAME } from '../lib/constants';
 
 export default function Header() {
   return (
@@ -8,5 +8,5 @@ export default function Header() {
         <a className="hover:underline">{BLOG_NAME}</a>
       </Link>
     </h2>
-  )
+  );
 }

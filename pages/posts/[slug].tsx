@@ -1,23 +1,23 @@
-import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
-import { BLOG_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
+import { useRouter } from 'next/router';
+import ErrorPage from 'next/error';
+import Container from '../../components/container';
+import PostBody from '../../components/post-body';
+import Header from '../../components/header';
+import PostHeader from '../../components/post-header';
+import Layout from '../../components/layout';
+import { getPostBySlug, getAllPosts } from '../../lib/api';
+import PostTitle from '../../components/post-title';
+import Head from 'next/head';
+import { BLOG_NAME } from '../../lib/constants';
+import markdownToHtml from '../../lib/markdownToHtml';
 
 export default function Post({ post, preview }) {
-  const router = useRouter()
+  const router = useRouter();
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
         <Header />
         {router.isFallback ? (
@@ -42,7 +42,7 @@ export default function Post({ post, preview }) {
         )}
       </Container>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ params }) {
@@ -53,8 +53,8 @@ export async function getStaticProps({ params }) {
     'author',
     'content',
     'ogImage',
-  ])
-  const content = await markdownToHtml(post.content || '')
+  ]) as Post;
+  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {
@@ -63,11 +63,11 @@ export async function getStaticProps({ params }) {
         content,
       },
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPosts(['slug']) as Post[];
 
   return {
     paths: posts.map((post) => {
@@ -75,8 +75,8 @@ export async function getStaticPaths() {
         params: {
           slug: post.slug,
         },
-      }
+      };
     }),
     fallback: false,
-  }
+  };
 }

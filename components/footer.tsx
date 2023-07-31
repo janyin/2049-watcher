@@ -1,46 +1,46 @@
-import React, { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import Container from './container'
+import React, { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import Container from './container';
 
 export default function Footer() {
-  const [isMounted, setIsMounted] = useState(false)
-  const [themeMode, setThemeMode] = useState('system')
-  const { setTheme } = useTheme()
+  const [isMounted, setIsMounted] = useState(false);
+  const [themeMode, setThemeMode] = useState('system');
+  const { setTheme } = useTheme();
 
   useEffect(() => {
-    const themeSetting = localStorage.getItem('themeSetting')
+    const themeSetting = localStorage.getItem('themeSetting');
 
     if (!themeSetting) {
-      localStorage.setItem('themeSetting', 'system')
+      localStorage.setItem('themeSetting', 'system');
     } else {
-      setThemeMode(themeSetting)
+      setThemeMode(themeSetting);
     }
-    setIsMounted(true)
-  }, [])
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     if (isMounted) {
       window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
-        const newTheme = e.matches ? 'dark' : 'light'
-        const themeSetting = localStorage.getItem('themeSetting')
+        const newTheme = e.matches ? 'dark' : 'light';
+        const themeSetting = localStorage.getItem('themeSetting');
 
-        localStorage.setItem('systemTheme', newTheme)
+        localStorage.setItem('systemTheme', newTheme);
         if (themeSetting && themeSetting === 'system') {
-          setTheme(newTheme)
+          setTheme(newTheme);
         }
-      })
+      });
     }
-  }, [isMounted])
+  }, [isMounted]);
 
   const handleChange = (e) => {
-    localStorage.setItem('themeSetting', e.target.value)
-    setThemeMode(e.target.value)
+    localStorage.setItem('themeSetting', e.target.value);
+    setThemeMode(e.target.value);
     if (e.target.value !== 'system') {
-      setTheme(e.target.value)
+      setTheme(e.target.value);
     } else {
-      setTheme(localStorage.getItem('systemTheme') || 'light')
+      setTheme(localStorage.getItem('systemTheme') || 'light');
     }
-  }
+  };
 
   return (
     <footer className="bg-accent-1 border-t border-accent-2 dark:bg-dark-1 dark:border-gray-500">
@@ -69,5 +69,5 @@ export default function Footer() {
         </div>
       </Container>
     </footer>
-  )
+  );
 }

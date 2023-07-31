@@ -1,6 +1,6 @@
-import Avatar from '../components/avatar'
-import DateFormatter from '../components/date-formatter'
-import PostTitle from '../components/post-title'
+import Avatar from './avatar';
+import DateFormatter from './date-formatter';
+import PostTitle from './post-title';
 
 export default function PostHeader({ title, date, author }) {
   return (
@@ -18,5 +18,5 @@ export default function PostHeader({ title, date, author }) {
         </div>
       </div>
     </>
-  )
+  );
 }

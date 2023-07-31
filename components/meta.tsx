@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Meta() {
   return (
@@ -33,5 +33,5 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content="2049观察者博客" />
     </Head>
-  )
+  );
 }
