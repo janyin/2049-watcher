@@ -1,4 +1,4 @@
-import markdownStyles from '../styles/markdown-styles.module.css';
+import markdownStyles from '../styles/markdown-styles.module.scss';
 
 export default function PostBody({ content }) {
   return (

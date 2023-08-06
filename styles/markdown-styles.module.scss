@@ -22,11 +22,10 @@
 
 .markdown blockquote {
   margin: 0;
-}
-
-.markdown blockquote p {
-  padding: 15px;
-  background: #eee;
-  color: #000;
-  border-radius: 5px;
+  p {
+    padding: 15px;
+    background: #eee;
+    color: #000;
+    border-radius: 5px;
+  }
 }
