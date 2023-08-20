@@ -16,6 +16,7 @@ export default function Post({ post, preview }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+  const title = `${post.title} | ${BLOG_NAME}`;
   return (
     <Layout>
       <Container>
@@ -26,9 +27,7 @@ export default function Post({ post, preview }) {
           <>
             <article className="mb-32">
               <Head>
-                <title>
-                  {post.title} | {BLOG_NAME}
-                </title>
+                <title>{title}</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader

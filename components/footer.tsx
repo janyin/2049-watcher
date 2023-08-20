@@ -30,7 +30,7 @@ export default function Footer() {
         }
       });
     }
-  }, [isMounted]);
+  }, [isMounted, setTheme]);
 
   const handleChange = (e) => {
     localStorage.setItem('themeSetting', e.target.value);
